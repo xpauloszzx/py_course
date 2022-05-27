@@ -4,7 +4,7 @@ Any e All
 
 all() -> Retorna True se todos os elementos do iterável são verdadeiros ou ainda se o iterável está vazio.
 
-# Exmeplo all()
+# Exemplo all()
 
 print(all([0, 1, 2, 3, 4]))  # Todos os números são verdadeiro? False
 
@@ -41,4 +41,10 @@ print(any([nome[0] == 'C' for nome in nomes]))
 
 
 print(any([num for num in [4, 2, 10, 6, 8, 9] if num % 2 == 0]))
+
+
+string = ('paulinho','sandra','lourdes')
+
+print(all([nome[-1] =='o' for  nome in string]))
+
 

@@ -9,6 +9,9 @@ Em aulas anteriores nós estudamos:
 Não vimos:
 - Tuple Comprehension....porque elas se chamam Generators
 
+
+GENERETOR OCUPA MENOS RECURSO DE MEMORIA QUE LIST COMPREHENSION
+
 nomes = ['Carlos', 'Camila', 'Carla', 'Cassiano', 'Cristina', 'Vanessa']
 
 print(any([nome[0] == 'C' for nome in nomes])
@@ -30,6 +33,7 @@ print(type(res))
 print(res)
 
 # Qual é a utilidade de getsizeof()? -> Retorna a quantidade de bytes em memória do elemento passado como parâmetro
+
 from sys import getsizeof
 
 # Mostra quantos bytes a string 'Geek'está ocupando em memória. Quanto maior a string, mais espaço ocupa.
@@ -46,6 +50,8 @@ print(getsizeof(92345668823))
 print(getsizeof(True))
 
 from sys import getsizeof
+
+#Comparando a quantidade de bytes que cada Comprehension gasta na memoria...
 
 # Gerando uma lista de números com List Comprehension
 list_comp = getsizeof([x * 10 for x in range(1000)])
