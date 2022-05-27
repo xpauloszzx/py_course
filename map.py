@@ -27,7 +27,6 @@ print(areas)
 # Forma 2 - Map
 
 # Map é uma função que recebe dois parâmetros: O primeiro a função, o segundo um iterável. Retorna um Map Object
-
 areas = map(area, raios)
 
 print(areas)

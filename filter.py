@@ -3,6 +3,24 @@ Filter
 
 filter() -> Serve para filtrar dados de uma determinada coleção.
 
+#filter sintax:
+#filter(function,iterable)
+
+#A funcao deve retornar alguma operacao de condicao (true ou falso) p fazer a filtração...
+
+OBS: Assim como na função map(), após serem utilizados os dados de filter() eles são excluídos da memória.
+
+
+
+
+
+
+
+
+
+
+Ex1:
+
 # Biblioteca para trabalhar com dados estatísticos
 import statistics
 
@@ -17,10 +35,21 @@ print(f'Média: {media}')
 # OBS: Assim como a funcão map(), a filter() recebe dois parâmetros, sendo
 # uma função e um iterável.
 
+
+
 res = filter(lambda valor: valor > media, dados)
 print(list(res))
 
-#OBS: Assim como na função map(), após serem utilizados os dados de filter() eles são excluídos da memória.
+
+
+
+
+
+
+Ex2:
+
+
+Remoção de dados faltantes: 
 
 paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
 
@@ -38,13 +67,26 @@ res = filter(lambda pais: pais != '', paises)
 
 print(list(res))
 
+
+
+
+
+
 # A diferenca entre map() e filter() é:
+
 
 # map() -> Recebe dois parâmetros, uma função e um iterável e retorna um objeto mapeando a função para cada elemento do iterável.
 
 # filter() -> Recebe dois parâmetros, uma função e um iterável e retorna um objeto filtrando apenas os elementos de acordo com a função.
 
-# Exemplo mais complexo
+
+
+
+
+
+
+
+# Ex.3: Exemplo mais complexo
 
 usuarios = [
     {"username": "samuel", "tweets": ["Eu adodo bolos", "Eu adoro pizzas"]},
@@ -68,6 +110,12 @@ inativos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
 print(inativos)
 """
 
+
+
+
+
+#Ex.4:
+
 # Combinar filter() e map()
 
 nomes = ['Vanessa', 'Ana', 'Maria']
@@ -77,3 +125,12 @@ nomes = ['Vanessa', 'Ana', 'Maria']
 lista = list(map(lambda nome: f'Sua instrutora é {nome}', filter(lambda nome: len(nome) < 5, nomes)))
 
 print(lista)
+
+
+#EX 5:
+
+#Filtrando estudante q obteve maior nota...
+
+students=[{'Nome':'Paulo','Nota':7.5} ,{'Nome':'Gabriel','Nota': 4.7},{'Nome':'Joana', 'Nota':5.5}, {'Nome':'Iara', 'Nota': 9.3}]
+
+print(list(filter(lambda Alunos : Alunos['Nota']>7,students)))
