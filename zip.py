@@ -3,6 +3,9 @@ Zip
 
 zip() -> Cria um iterável (Zip Object) que agrega elemento de cada um dos iteráveis passados como entrada em pares.
 
+Zip consiste em juntar cada elemento de listas diferentes em pares, trios etc...
+Um a um, transformando-as em  par, trios... em tuplas.
+
 # Exmplos
 
 lista1 = [1, 2, 3]

@@ -124,3 +124,34 @@ for musica in musicas:
     if musica['tocou'] == min:
         print(musica['titulo'])
 
+
+
+
+#Ex...
+
+'''
+
+purchases = [
+    {'Cliente':'Maria', 'Ultima Compra': 'PS4', 'qtd_compras': 110 },
+    {'Cliente':'Paulo', 'Ultima Compra': 'Redmi note 11', 'qtd_compras': 34 },
+    {'Cliente':'Sandra', 'Ultima Compra': 'Chapinha', 'qtd_compras': 750 }
+]
+
+purchases.append({'Cliente':'Natália', 'Ultima Compra': 'Iphone 13', 'qtd_compras': 230 })
+
+purchases.append({'Cliente':'Josefa', 'Ultima Compra': 'PS4', 'qtd_compras': 635})
+
+
+#Maior comprador 
+max_buyer = max(purchases, key = lambda buyer: buyer['qtd_compras'])['Cliente']
+print(max_buyer)
+
+
+#Menor comprador
+
+minor= min(purchases, key = lambda buyer : buyer['qtd_compras'])['Cliente']
+
+print(minor)
+
+
+'''
