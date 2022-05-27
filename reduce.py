@@ -42,7 +42,19 @@ reduce() irá retornar o resultado final.
 Alternativamente, poderíamos ver a função reduce() como:
 
 funcao(funcao(funcao(a1, a2), a3), a4), ...), an)
+
+-- É NECESSÁRIO PASSAR 2 PARAMETROS NA FUNCAO PARA UTILIZAR O REDUCE 
+
+É equivalente a uma funcao com um loop...
+
+Ex. função que soma: 
+
+dado = [1,2,3,4]
+soma = reduce(lambda i: i+1,dado) -> Retorno = 1+2+3+4 = 10.
+
+
 """
+
 
 # Como funciona na prática?
 
