@@ -14,6 +14,8 @@ Sort -> Modifica a propria lista
 
 Sorted -> gera e retorna uma nova lista
 
+Sintax: sorted(iteravel)
+
 # Exemplo
 
 numeros = {6, 1, 8, 2}

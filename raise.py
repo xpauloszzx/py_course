@@ -60,3 +60,13 @@ def colore(texto, cor):
 
 
 colore('Geek University', 'preto')
+
+
+#Ex2:
+#Se os nomes nao forem femininos (terminarem com "a", gera um erro...)
+def get_name(*arg):
+    for i,name in enumerate(arg):
+        if(type(name)is not str or name[-1] != 'a'):
+            raise TypeError('Digite apenas nomes femininos')
+
+get_name('paulinha','sandra','roberta','alexandra')

@@ -32,6 +32,7 @@ finally:
 
 # O finally, geralmente, é utilizado para fechar ou desalocar recursos.
 
+
 # Exemplo mais complexo ERRADO
 
 
