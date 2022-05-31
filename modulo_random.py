@@ -68,3 +68,4 @@ print(cartas)
 shuffle(cartas)
 
 print(cartas.pop())
+

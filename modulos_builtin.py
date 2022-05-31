@@ -3,8 +3,14 @@ Trabalhando com Módulos Builtin (módulos integrados, que já vem instalados no
 ________________________
 |Python|Módulos builtin|
 ------------------------
+Para economizar espaço de memória, o python não carrega todos os seus módulos
+builtin, para carregar algum módulo builtin, basta importar.
+
+Ex: import random, import statistics, import numpy... 
+
 
 # Utilizando alias (apelidos) para módulos/funções
+
 import random as rdm
 
 
@@ -14,8 +20,16 @@ print(rdm.random())
 
 from random import *
 
+#Nesse tipo de import, pode-se utilizar simplesmente as funçoes do modulo,
+sem especificar de qual módulo se trata.
+
+Ex: from random import * 
 
 print(random())
+print(choice(lista1))
+print(sample(lista 1, 5))
+print(shuffle(lista1))
+
 
 # Importando todo o módulo
 
@@ -60,4 +74,10 @@ shuffle(lista)
 print(lista)
 
 print(choice('University'))
+
+from math import * 
+
+print(pi)
+print(e)
+
 
